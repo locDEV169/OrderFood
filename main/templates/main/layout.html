@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--link logo lấy từ fontawesome-->
+    <script src="https://kit.fontawesome.com/649a628862.js" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'main/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'main/sb-admin-2.min.css' %}">
@@ -66,16 +69,16 @@
         {% block content %}{% endblock %}
     </main>
       <!-- Site footer -->
-    <footer class="site-footer">
+    <footer class="site-footer" style="background-color: #2d2e33;">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
+            <h6 style="font-weight: bold;font-size: 22px">About</h6>
             <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Categories</h6>
+            <h6 style="font-weight: bold;font-size: 22px">Categories</h6>
             <ul class="footer-links">
               <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
               <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
@@ -87,7 +90,7 @@
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
+            <h6 style="font-weight: bold;font-size: 22px">Quick Links</h6>
             <ul class="footer-links">
               <li><a href="http://scanfcode.com/about/">About Us</a></li>
               <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
@@ -102,8 +105,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text" style="font-weight: bold;font-size: 22px">Description.
             <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
          <a href="#">Scanfcode</a>.
+                <p class="copyright-text">Rewrite and Design &copy; 2021 by
+         <a href="#">Loc Nguyen</a>.
             </p>
           </div>
 
