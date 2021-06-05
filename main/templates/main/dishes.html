@@ -14,7 +14,7 @@
           <!--Content-->
           <div class="p-4 content">
             <div class="mt-0">
-                <h2><u>{{ item.title }}</u><span class="badge badge-{{ item.label_colour }} ml-2">{{ item.labels }}</span></h2>
+                <h2><u>{{ item.title }}</u>
             </div>
             <div class="lead">
               {% if item.description %}
@@ -36,19 +36,18 @@
  {% for review in reviews %}
     <div class="main-reviews card bg-success mb-3">
       <div class="card-body">
-          {% if review is null %}
-               <div class="user_details" style="display: flex">
-                  <p>Chua co danh gia</p>
-               </div>
-          {% else %}
               <div class="user_details" style="display: flex">
                   <p class="name-user">{{ review.user.username }} </p>
                   <p class="date-up">{{ review.posted_on }}</p>
               </div>
               <h4>{{ review }}</h4>
-          {% endif %}
+
       </div>
     </div>
+    {% empty %}
+      <div class="no-comment" >
+          <p>Chua co danh gia</p>
+      </div>
     {% endfor %}
 </div>
   <form action="{% url 'main:add_reviews' %}" method="POST" class="mb-3">
@@ -63,8 +62,6 @@
         </div>
       </div>
     </form>
-
-    
   </div>
 </div>
 </div>
