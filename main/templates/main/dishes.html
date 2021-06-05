@@ -7,7 +7,11 @@
   <main class="detail-food">
     <div class="container dark-grey-text">
       <div class="row wow fadeIn">
+
         <div class="area-dish-image">
+
+        <div class="col-md-6 mb-4" >
+
           <img src="{{ item.image.url }}" class="img-fluid mt-4" alt="">
         </div>
         <div class="col-md-6 mb-4 information">
@@ -15,6 +19,7 @@
           <div class="p-4 content">
             <div class="mt-0">
                 <h2><u>{{ item.title }}</u>
+                <h2><u style="margin-right: 15px">{{ item.title }}</u>0</h2>
             </div>
             <div class="lead">
               {% if item.description %}
@@ -23,13 +28,14 @@
                 <h3>P{{ item.price }} <small>(per order of {{ item.pieces}} pieces)</small></h3>
               <h4>{{ item.instructions }}</h4>
             </div>
-            <a href="{% url 'main:add-to-cart' item.slug %}" class="btn btn-success btn-md my-0 p">Add to cart</a>
+            <a href="{% url 'main:add-to-cart' item.slug %}" class="btn btn-success btn-md my-0 p" style="width: 150px;margin: 0 auto">Add to cart</a>
           </div>
         </div>
       </div>
       <hr>
     </div>
   </main>
+
   <div class="container-review">
     <h1 class="text-center">Reviews</h1>
 <div class="area-text-review">
@@ -52,12 +58,12 @@
 </div>
   <form action="{% url 'main:add_reviews' %}" method="POST" class="mb-3">
       {% csrf_token %}
-      <div class="row">
-        <div class="col-sm-11">
+      <div class="row" style="margin-bottom: 70px">
+        <div class="col-lg-9">
           <input type="text" name="review" class="form-control" placeholder="Enter Your Review">
           <input type="hidden" name="rslug" class="form-control" value="{{item.slug}}">
         </div>
-        <div class="col-sm-1">
+        <div class="col-lg-3">
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </div>
