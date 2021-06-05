@@ -9,12 +9,11 @@
     <script src="https://kit.fontawesome.com/649a628862.js" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static 'main/home.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'main/dishes.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'main/layout.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/sb-admin-2.min.css' %}">
     <title>Food Ordering System</title>
 </head>
-<body style="overflow-x: hidden">
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="/"><h3>Food Ordering System</h3></a>
         <button
@@ -70,7 +69,7 @@
         {% block content %}{% endblock %}
     </main>
       <!-- Site footer -->
-    <footer class="site-footer" >
+    <footer class="site-footer" style="background-color: #2d2e33;">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
