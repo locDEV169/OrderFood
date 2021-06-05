@@ -36,19 +36,17 @@
  {% for review in reviews %}
     <div class="main-reviews card bg-success mb-3">
       <div class="card-body">
-          {% if review is null %}
-               <div class="user_details" style="display: flex">
-                  <p>Chua co danh gia</p>
-               </div>
-          {% else %}
               <div class="user_details" style="display: flex">
                   <p class="name-user">{{ review.user.username }} </p>
                   <p class="date-up">{{ review.posted_on }}</p>
               </div>
               <h4>{{ review }}</h4>
-          {% endif %}
       </div>
     </div>
+      {% empty %}
+            <div class="no-review" >
+                  <p>Chua co danh gia</p>
+            </div>
     {% endfor %}
 </div>
   <form action="{% url 'main:add_reviews' %}" method="POST" class="mb-3">
@@ -64,7 +62,7 @@
       </div>
     </form>
 
-    
+
   </div>
 </div>
 </div>

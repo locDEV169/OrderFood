@@ -16,7 +16,7 @@
 
 .container-review{
     width: 40%;
-    max-height: 1000px;
+    max-height: 500px;
     background-color: white;
 }
 
@@ -24,7 +24,8 @@
 }
 
 .area-text-review{
-    max-width: 1000px;
+    max-width: 600px;
+    min-height: 200px;
     width: 100%;
     overflow-y: scroll;
     border-top: 1px solid black;
@@ -73,5 +74,10 @@
 
 .img-fluid,.area-dish-image{
     width: 100%;
+}
+
+.no-review{
+    text-align: center;
+    margin: 100px 0;
 }
 
