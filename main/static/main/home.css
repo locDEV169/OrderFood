@@ -219,15 +219,16 @@ h5 >a{
           min-height: 200px;
      }
 
+      .area-main-food{
+          height: auto;
+          margin: 20px auto;
+     }
+
      .area-image-food{
           margin: 20px auto;
      }
 
-     .area-main-food{
-          height: auto;
-          margin: 20px auto;
 
-     }
 
 }
 
