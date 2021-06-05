@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+<<<<<<< HEAD
     <data-source source="LOCAL" name="db" uuid="97fe44d4-d401-43ff-aec9-4717e9ff9195">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
@@ -13,6 +14,13 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:D:\OderFood\db.sqlite3</jdbc-url>
+=======
+    <data-source source="LOCAL" name="db" uuid="f3f4e9b2-6b7b-4588-be92-b2494bceafcf">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Python\Online_Food_Ordering_System\Online_Food_Ordering_System\db.sqlite3</jdbc-url>
+>>>>>>> master
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

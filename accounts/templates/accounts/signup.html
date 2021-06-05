@@ -2,8 +2,8 @@
 {% load crispy_forms_tags %} 
 {% block content %}
 <div class="container">
-    <h1>Signup</h1>
-    <div class="form-border">
+    <h1 style="margin-top: 50px">Signup</h1>
+    <div class="form-border" style="margin-bottom: 60px;">
         <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
             {% csrf_token %}
             {{ form|crispy }}
